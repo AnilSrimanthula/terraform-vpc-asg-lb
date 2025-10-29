@@ -23,7 +23,7 @@ lb_protocol = "http"
 }
 }
 
-resource = "aws_autoscaling_group" "myasg" {
+resource  "aws_autoscaling_group" "mysg" {
 name = "terra-sg"
 launch_template {
 id = aws_launch_template.mylt.id
