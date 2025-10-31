@@ -8,7 +8,7 @@ placement {
 availability_zone = "ap-south-1a"
 }
 vpc_security_group_ids = [aws_security_group.mysg.id]
-user_data = filebased64("/root/terraform-vpc-asg-lb/netflix.sh")
+user_data = filebase64("/root/terraform-vpc-asg-lb/netflix.sh")
 }
 
 resource "aws_elb" "mylb" {
